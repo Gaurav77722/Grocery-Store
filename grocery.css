@@ -15,12 +15,7 @@ input[type="text"]{
     background-color:aliceblue
 }
 
-#addNeed{
-    background-color: brown;
-    color: darkblue;
-}
-
-#addHave{
+button{
     background-color: brown;
     color: darkblue;
 }
@@ -51,7 +46,7 @@ h2{
     border: 2px solid blue;
 }
 
-.List li{
+.list li{
     list-style: none;
     background-color: yellowgreen;
     border-bottom: 1    px dotted red;
@@ -61,7 +56,7 @@ h2{
     color:darkred;
 }
 
-.List a{
+.list a{
     float: right;
     text-decoration: none;
     color:red;

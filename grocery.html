@@ -6,34 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="grocery.css">
-    <script src="grocery.js"></script>
 </head>
 <body>
     <h1>Grocery List</h1>
-    <form action="add" method="get">
+    <form>
         Budget
-        <input type="text" name="budget">
+        <input type="number" name="budget">
         <br>
         <br>
         Item name
-        <input type="text" name="itemName">
+        <input type="text" name="itemName" class="itemName">
         
         Item Price
         <input type="number" name="itemPrice">
         <br>
         <br>
-        <input id="addNeed" type="submit" value="Need">
-        <input id="addHave" type="submit" value="Have"></input>
+        <button type="submit" class="Need" id="need">Need</button>
+        <button type="submit" class="Have" id="have">Have</button>
     </form>
 
     <h2>Items Needed:</h2>
-    <ul class="List" id="needed">
-        <li><input type="checkbox" name="Item">Milk<a href="#"> &#10006; </a></li>
-    </ul>
+    <div class="container">
+        <ul class="needList" id="needed">
+            <li><input type="checkbox" name="Item">Milk<a href="#"> &#10006; </a></li>
+        </ul>
+    </div>
 
     <h2>Items Bought:</h2>
-    <ul class="List" id="bought">
-        <li><input type="checkbox" name="Item" checked>Milk<a href="#"> &#10006; </a></li>
-    </ul>
+    <div class="container2">
+        <ul class="haveList" id="bought">
+            <li><input type="checkbox" name="Item" checked>Milk<a href="#"> &#10006; </a></li>
+        </ul>
+    </div>
+   
+
+    <script src="grocery2.js"></script>
 </body>
 </html>
