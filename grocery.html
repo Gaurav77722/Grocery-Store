@@ -5,25 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grocery.css">
     <script src="grocery.js"></script>
 </head>
 <body>
     <h1>Grocery List</h1>
-    <form action="add" method="get"></form>
-    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Budget &nbsp; &nbsp; &nbsp;
-    <input type="number" name="budget">
-    <br>
-    <br>
-    Item name
-    <input type="text" name="itemName">
-    &nbsp; &nbsp;
-    Item Price
-    <input type="number" name="itemPrice">
-    <br>
-    <br>
-    <input id="addNeed" type="submit" value="Need">
-    <input id="addHave" type="submit" value="Have"></input>
-    
+    <form action="add" method="get">
+        Budget
+        <input type="text" name="budget">
+        <br>
+        <br>
+        Item name
+        <input type="text" name="itemName">
+        
+        Item Price
+        <input type="number" name="itemPrice">
+        <br>
+        <br>
+        <input id="addNeed" type="submit" value="Need">
+        <input id="addHave" type="submit" value="Have"></input>
+    </form>
+
+    <h2>Items Needed:</h2>
+    <ul class="List" id="needed">
+        <li><input type="checkbox" name="Item">Milk<a href="#"> &#10006; </a></li>
+    </ul>
+
+    <h2>Items Bought:</h2>
+    <ul class="List" id="bought">
+        <li><input type="checkbox" name="Item" checked>Milk<a href="#"> &#10006; </a></li>
+    </ul>
 </body>
 </html>
