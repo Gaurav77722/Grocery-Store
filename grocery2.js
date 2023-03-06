@@ -23,7 +23,7 @@ needButton.addEventListener('click', (e)=>{
     }
     const close = document.querySelectorAll('li');
     for(let i=0; i<close.length; i++){
-        close[i].addEventListener('click', ()=>{
+        close[i].children[1].addEventListener('click', ()=>{
             close[i].style.opacity = 0;
             setTimeout(()=>{
                 close[i].style.display = "none";
