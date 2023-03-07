@@ -1,0 +1,64 @@
+body{
+    background-color: burlywood;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: monospace, 'cursive';
+}
+
+form{
+    color:brown;
+    font-size: 25px;
+}
+
+input[type="text"]{
+    background-color:aliceblue
+}
+
+button{
+    background-color: brown;
+    color: darkblue;
+}
+
+h1{
+    color:darkred;
+    font-size: 50px;
+}
+
+h2{
+    color:darkred;
+    font-size: 40px;
+}
+
+#needed{
+    color: chocolate;
+    font-size: 25px;
+    padding: 0 !important;
+    width: 500px;
+    border: 2px solid red ;
+}
+
+#bought{
+    color: chocolate;
+    font-size: 25px;
+    padding: 0 !important;
+    width: 500px;
+    border: 2px solid blue;
+}
+
+.list li{
+    list-style: none;
+    background-color: yellowgreen;
+    border-bottom: 1    px dotted red;
+    text-indent: 20px;
+    height: auto;
+    text-transform: capitalize;
+    color:darkred;
+}
+
+.list a{
+    float: right;
+    text-decoration: none;
+    color:red;
+}
+
