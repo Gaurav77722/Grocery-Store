@@ -11,31 +11,38 @@
     <h1>Grocery List</h1>
     <form>
         Budget
-        <input type="number" name="budget">
+        <input type="number" name="budget" class="budget" value="0">
+        <button type="submit" class="budgetbtn" id="budgetbtn">Submit</button>
         <br>
         <br>
         Item name
         <input type="text" name="itemName" class="itemName">
-        
+    
+        <br>
+
         Item Price
-        <input type="number" name="itemPrice">
+        <input type="number" name="itemPrice" class="itemPrice" value="1">
         <br>
         <br>
         <button type="submit" class="Need" id="need">Need</button>
         <button type="submit" class="Have" id="have">Have</button>
     </form>
 
+    <p class="budgetOutput" id="budgetOutput"> Your budget is $0</p>
+    <p class="currentTotal" id="currentTotal"> Current Total: $0</p>
+    <p class="warning" id="warning"></p>
+
     <h2>Items Needed:</h2>
     <div class="container">
         <ul class="needList" id="needed">
-            <li><input type="checkbox" name="Item">Milk<a href="#"> &#10006; </a></li>
         </ul>
     </div>
+
+    <button type="submit" class="Done" id="done">Done</button>
 
     <h2>Items Bought:</h2>
     <div class="container2">
         <ul class="haveList" id="bought">
-            <li><input type="checkbox" name="Item" checked>Milk<a href="#"> &#10006; </a></li>
         </ul>
     </div>
    

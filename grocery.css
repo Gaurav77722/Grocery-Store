@@ -11,6 +11,11 @@ form{
     font-size: 25px;
 }
 
+p{
+    color:brown;
+    font-size: 25px;
+}
+
 input[type="text"]{
     background-color:aliceblue
 }
